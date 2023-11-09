@@ -18,7 +18,6 @@ const Tools = () => {
         <li><a href="#">Technology 2</a></li>
         <li><a href="#">Technology 2</a></li>
         <li><a href="#">Technology 2</a></li>
-        {/* Add more technologies as needed */}
       </ul>
     </section>
   );

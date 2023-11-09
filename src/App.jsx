@@ -5,7 +5,7 @@ import AboutMe from './AboutMe';
 import Tools from './Tools';
 import ContactForm from './ContacForm';
 import 'bootstrap/dist/css/bootstrap.css';
-import './styles.css'; // Add your custom styles file
+import './styles.css'; 
 
 
 function App() {
