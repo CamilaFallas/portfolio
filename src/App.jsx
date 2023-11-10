@@ -12,7 +12,6 @@ function App() {
   return (
     <div className="App">
       <Sidebar />
-
       <div className="main-content">
         <div className="main-content__margin">
         <AboutMe />

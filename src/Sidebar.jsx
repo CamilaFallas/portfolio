@@ -6,7 +6,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebar-content">
         <a href="" download>
-          <button className="btn btn-primary">Download CV</button>
+          <button className="btn btn-secondary">Download CV</button>
         </a>
       </div>
     </div>
@@ -14,6 +14,7 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
-//<img src="./assets/profilePhoto.jpg" alt="Your Name" className="img-fluid" />
+//<img src="./assets/profilePhoto.jpg" alt="Camila Fallas" className="img-fluid" />
 /* <a href='https://www.linkedin.com/in/camila-fallas-naranjo-16a8901a8/'>LindIn</a>
 <a href='https://github.com/CamilaFallas'>GitHub</a> */
+ 

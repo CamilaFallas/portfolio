@@ -6,7 +6,6 @@ const ContactForm = () => {
     <section id="contactForm">
       <h2>Contact Form</h2>
       <form>
-        {/* Add your form fields here, for example */}
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" className="form-control" />
@@ -22,7 +21,7 @@ const ContactForm = () => {
           <textarea id="message" name="message" className="form-control" rows="4"></textarea>
         </div>
 
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-secondary">Submit</button>
       </form>
     </section>
   );
