@@ -24,6 +24,7 @@
   object-fit: cover;
   height: 300px;
   width: 220px;
+  border-radius: 3%;
 }
 
 section {
