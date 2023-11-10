@@ -3,6 +3,7 @@ import React from 'react';
 import Sidebar from './Sidebar';
 import AboutMe from './AboutMe';
 import Tools from './Tools';
+import MyProjects from './MyProjects'
 import ContactForm from './ContacForm';
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css'; 
@@ -16,6 +17,7 @@ function App() {
         <div className="main-content__margin">
         <AboutMe />
         <Tools />
+        <MyProjects />
         <ContactForm />
         </div>
       </div>
