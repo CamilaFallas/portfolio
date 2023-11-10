@@ -9,7 +9,7 @@ const AboutMe = () => {
           <p>¡Hola! 👋 I'm Camila, a front-end development student hailing from the beautiful country of Costa Rica 🌴.</p>
         </div>
         <div className="col-md-4">
-          <img src="/hero-ilustration.png" alt="Astronomy illustration" className="img-fluid" />
+          <img src="/assets/images/hero-ilustration.png" className="img-fluid" />
         </div>
       </div>
       <h2>About Me</h2>
