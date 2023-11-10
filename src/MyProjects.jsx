@@ -6,7 +6,7 @@ const MyProjects = () => {
     {
       id: 1,
       title: 'Tienda Fundacion La Libertad',
-      description: 'Ecommerce with.',
+      description: 'E-commerce built in WooCommerce for La Libertad Foundation.',
       image: './assets/images/la-libertad.png',
       link: 'https://dev-test-la-libertad.pantheonsite.io/',
     }
@@ -24,7 +24,7 @@ const MyProjects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="img-fluid h-100"
+                    className="img-fluid h-100 object-fit-contain"
                   />
                 </div>
                 <div className="col-md-8">
