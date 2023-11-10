@@ -1,10 +1,13 @@
+/* rem? */
+
 .App {
   display: flex;
   flex-direction: column; 
+  font-family: 'Poppins', sans-serif;
 }
 
 .sidebar {
-  background-color: #CBBDFF;
+  background-color: #262626;
   color: #edeef0;
   padding: 20px;
   display: flex;
@@ -20,7 +23,7 @@
 .main-content {
   padding: 20px;
   overflow-y: auto;
-  background-color: #7964C9;
+  background-color: #232323;
   color: #edeef0;
 }
 
@@ -28,8 +31,12 @@
   margin-top: 20px;
 }
 
+.btn:hover {
+  background-color: #8d50dc;
+}
+
 section {
-  margin-bottom: 10rem;
+  margin: 3rem 2rem;
 }
 
 /* Mobile */
