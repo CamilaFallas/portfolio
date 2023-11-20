@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column; 
   font-family: 'Poppins', sans-serif;
+  font-size: 18px;
 }
 
 .sidebar {
@@ -27,7 +28,7 @@
 }
 
 section {
-  margin: 3rem 2rem;
+  margin: 7rem 3rem 6rem 3rem;
 }
 
 .main-content {
@@ -53,6 +54,16 @@ section {
 
 .custom-icon:hover {
 color: #b88cf0;
+}
+
+.star-list {
+  list-style: none;
+  padding: 0; 
+}
+
+.star-list li::before {
+  content: "🌟"; 
+  margin-right: 0.5em; 
 }
 
 /* Mobile */

@@ -4,8 +4,8 @@ import React from 'react';
 const Tools = () => {
   return (
     <section id="tools">
-      <h2>Tools</h2>
-      <ul>
+      <h2>Tools I have worked with...</h2>
+      <ul className="star-list">
         <li><a className="link-info" href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
         <li><a className="link-info" href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
         <li><a className="link-info" href="https://www.figma.com">Figma</a></li>
