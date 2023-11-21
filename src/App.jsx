@@ -5,6 +5,7 @@ import AboutMe from './AboutMe';
 import Tools from './Tools';
 import MyProjects from './MyProjects'
 import ContactForm from './ContacForm';
+import Footer from './Footer';
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css'; 
 
@@ -19,6 +20,7 @@ function App() {
         <Tools />
         <MyProjects />
         <ContactForm />
+        <Footer />
         </div>
       </div>
     </div>
