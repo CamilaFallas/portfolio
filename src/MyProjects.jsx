@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const MyProjects = () => {
   const projects = [
@@ -9,6 +10,13 @@ const MyProjects = () => {
       description: 'E-commerce built in WooCommerce for La Libertad Foundation.',
       image: './assets/images/la-libertad.png',
       link: 'https://dev-test-la-libertad.pantheonsite.io/',
+    },
+    {
+      id: 2,
+      title: 'From the idea in Figma to reality',
+      description: 'A Figma Project for a fictitious vinyl store',
+      image: './assets/images/back-to-the-future.png',
+      link: 'https://www.figma.com/file/LrSUk68FUwdtJV3emSMwK4/BACK-TO-THE-FUTURE-VYNIL?type=design&node-id=0%3A1&mode=design&t=ZRjmFSBAK5s2BLF8-1',
     }
   ];
 
@@ -18,19 +26,26 @@ const MyProjects = () => {
       <div className="row justify-content-center">
         {projects.map((project) => (
           <div key={project.id} className="col-md-8 mb-4">
-            <div className="card" style={{ backgroundColor: '#2c2c2c', color: 'white' }}>
+            <motion.div
+              className="card"
+              style={{ backgroundColor: '#2c2c2c', color: 'white' }}
+              whileHover={{ scale: 1.05, boxShadow: '0px 0px 20px rgba(255, 255, 255, 0.2)' }}
+            >
               <div className="row g-0">
-                <div className="col-md-4">
-                  <img
+                <div className="col-md-4 d-flex align-items-center">
+                  <motion.img
                     src={project.image}
                     alt={project.title}
-                    className="img-fluid h-100 object-fit-contain"
+                    className="img-fluid h-100 object-fit-contain mx-auto"
+                    style={{ maxWidth: '100%', maxHeight: '300px' }}
                   />
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 d-flex flex-column justify-content-between">
                   <div className="card-body">
                     <h5 className="card-title">{project.title}</h5>
                     <p className="card-text">{project.description}</p>
+                  </div>
+                  <div className="card-footer">
                     <a
                       href={project.link}
                       target="_blank"
@@ -42,7 +57,7 @@ const MyProjects = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>
@@ -51,6 +66,3 @@ const MyProjects = () => {
 };
 
 export default MyProjects;
-
-// Manejar estilos dentro
-//Pasarlos al css, estilos por componente
