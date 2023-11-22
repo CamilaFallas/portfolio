@@ -11,9 +11,9 @@ const Tools = () => {
         <li><a className="link-secondary" target="_blank" rel="noreferrer" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a></li>
         <li><a className="link-secondary" target="_blank" rel="noreferrer" href="https://nodejs.org/en/">NodeJS</a></li>
         <li><a className="link-secondary" target="_blank" rel="noreferrer" href="https://react.dev/">REACT</a></li>
-        <li><a className="link-secondary" target="_blank" rel="noreferrer" href="https://chakra-ui.com/">Chskra</a></li>
+        <li><a className="link-secondary" target="_blank" rel="noreferrer" href="https://chakra-ui.com/">Chakra</a></li>
         <li><a className="link-secondary" target="_blank" rel="noreferrer" href="https://nextjs.org/">Next.js</a></li>
-        <li><a className="link-secondary" target="_blank" rel="noreferrer" href="https://nextjs.org/">MongoBD</a></li>
+        <li><a className="link-secondary" target="_blank" rel="noreferrer" href="https://www.mongodb.com/">MongoBD</a></li>
         <li><a className="link-secondary" target="_blank" rel="noreferrer" href="https://www.figma.com">Figma</a></li>
         <li><a className="link-secondary" target="_blank" rel="noreferrer" href="https://sass-lang.com/">SASS</a></li>
         <li><a className="link-secondary" target="_blank" rel="noreferrer" href="https://getbootstrap.com/">Bootstrap</a></li>
