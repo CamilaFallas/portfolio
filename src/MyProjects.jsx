@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaWordpress, FaFigma } from 'react-icons/fa'; // Import the FontAwesome icons you need
 
 const MyProjects = () => {
   const projects = [
@@ -10,6 +11,7 @@ const MyProjects = () => {
       description: 'E-commerce built in WooCommerce for La Libertad Foundation.',
       image: './assets/images/la-libertad.png',
       link: 'https://dev-test-la-libertad.pantheonsite.io/',
+      techIcons: [<FaWordpress key="wordpress" size={24} />],
     },
     {
       id: 2,
@@ -17,7 +19,9 @@ const MyProjects = () => {
       description: 'A Figma Project for a fictitious vinyl store',
       image: './assets/images/back-to-the-future.png',
       link: 'https://www.figma.com/file/LrSUk68FUwdtJV3emSMwK4/BACK-TO-THE-FUTURE-VYNIL?type=design&node-id=0%3A1&mode=design&t=ZRjmFSBAK5s2BLF8-1',
-    }
+      githubLink: 'https://github.com/your-username/back-to-the-future-repo',
+      techIcons: [<FaFigma key="figma" size={24} />],
+    },
   ];
 
   return (
@@ -29,7 +33,6 @@ const MyProjects = () => {
             <motion.div
               className="card"
               style={{ backgroundColor: '#2c2c2c', color: 'white' }}
-              whileHover={{ scale: 1.05, boxShadow: '0px 0px 20px rgba(255, 255, 255, 0.2)' }}
             >
               <div className="row g-0">
                 <div className="col-md-4 d-flex align-items-center">
@@ -44,16 +47,39 @@ const MyProjects = () => {
                   <div className="card-body">
                     <h5 className="card-title">{project.title}</h5>
                     <p className="card-text">{project.description}</p>
+                    <div className="d-flex flex-wrap mb-2">
+                      {project.techIcons.map((icon, index) => (
+                        <span key={index} className="mx-2">
+                          {icon}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                  <div className="card-footer">
-                    <a
+                  <div className="card-footer d-flex justify-content-center">
+                    {/* {project.githubLink && (
+                      <motion.a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-secondary mx-2"
+                        whileHover={{
+                        boxShadow: '0px 0px 20px rgba(255, 255, 255, 0.2)'
+              }}
+                      >
+                        Watch code
+                      </motion.a>
+                    )} */}
+                    <motion.a
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-secondary"
+                      className="btn btn-secondary mx-2"
+                      whileHover={{
+                        boxShadow: '0px 0px 20px rgba(255, 255, 255, 0.2)'
+                      }}
                     >
                       See project
-                    </a>
+                    </motion.a>
                   </div>
                 </div>
               </div>
