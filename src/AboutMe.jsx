@@ -16,8 +16,8 @@ const AboutMe = () => {
             animate={{ x: [-20, 20, -20], y: [0, 0, 0], transition: { duration: 2, repeat: Infinity } }}
           />
         </div>
-        <motion.div className="col-md-6">
-          <p>¡Hola! 👋 I'm Camila, a front-end development student hailing from the beautiful country of Costa Rica 🌴.</p>
+        <motion.div className="col-md-6 text-sm-end ">
+          <p>¡Hola! 👋 I'm Camila, a front-end development student hailing from the beautiful country of Costa Rica 🌴</p>
         </motion.div>
       </div>
       <motion.h2>About Me</motion.h2>
