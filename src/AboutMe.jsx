@@ -8,15 +8,15 @@ const AboutMe = () => {
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="row d-flex align-items-center">
+      <div className="row d-flex align-items-center justify-content-between">
         <div className="col-md-4">
           <motion.img
             src="/assets/images/hero-ilustration.png"
             className="img-fluid"
-            animate={{ x: [-20, 20, -20], y: [0, 0, 0], transition: { duration: 2, repeat: Infinity } }}
+            animate={{ x: [-20, 20, -20], y: [0, 0, 0], transition: { duration: 3, repeat: Infinity } }}
           />
         </div>
-        <motion.div className="col-md-6 text-sm-end ">
+        <motion.div className="col-md-6" >
           <p>¡Hola! 👋 I'm Camila, a front-end development student hailing from the beautiful country of Costa Rica 🌴</p>
         </motion.div>
       </div>

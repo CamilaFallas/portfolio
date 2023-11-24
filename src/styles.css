@@ -48,13 +48,13 @@ section {
 
 .custom-icon {
   margin: 1rem;
-  width: 35px;
-  height: 35px;
+  width: 28px;
+  height: 28px;
   color: #8d50dc;
 }
 
 .custom-icon:hover {
-color: #b88cf0;
+color: #8d50dc;
 }
 
 .star-list {
