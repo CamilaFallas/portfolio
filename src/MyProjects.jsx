@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaWordpress, FaFigma } from 'react-icons/fa';
+import { FaWordpress, FaFigma, FaJs } from 'react-icons/fa';
 
 const MyProjects = () => {
   const controls = useAnimation();
@@ -26,6 +26,22 @@ const MyProjects = () => {
       link: 'https://www.figma.com/file/LrSUk68FUwdtJV3emSMwK4/BACK-TO-THE-FUTURE-VYNIL?type=design&node-id=0%3A1&mode=design&t=ZRjmFSBAK5s2BLF8-1',
       githubLink: 'https://github.com/your-username/back-to-the-future-repo',
       techIcons: [<FaFigma key="figma" size={24} />],
+    },
+    {
+      id: 3,
+      title: 'The perfect plant for you',
+      description: 'A vanilla JavaScript project connected to an API to recommend the perfect plant for you based on your necessities',
+      image: './assets/images/plants.png',
+      githubLink: 'https://github.com/CamilaFallas/plants',
+      techIcons: [<FaJs key="javascript" size={24} />],
+    },
+    {
+      id: 4,
+      title: 'Your YugiOh Collection!',
+      description: 'El código proporcionado es un conjunto de archivos de código fuente en JavaScript utilizando Node.js y Express para construir una API CRUD (Crear, Leer, Actualizar, Eliminar) para cartas de un juego. También incluye código en JavaScript para manipular el DOM y crear una interfaz de usuario que interactúa con la API para mostrar, buscar, agregar, actualizar y eliminar cartas. Además, se utiliza MongoDB con Mongoose para gestionar la base de datos.',
+      image: './assets/images/back-to-the-future.png',
+      githubLink: 'https://github.com/CamilaFallas/plants',
+      techIcons: [<FaJs key="javascript" size={24} />],
     },
   ];
 
