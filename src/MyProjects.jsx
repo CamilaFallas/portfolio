@@ -35,14 +35,6 @@ const MyProjects = () => {
       githubLink: 'https://github.com/CamilaFallas/plants',
       techIcons: [<FaJs key="javascript" size={24} />],
     },
-    {
-      id: 4,
-      title: 'Your YugiOh Collection!',
-      description: 'El código proporcionado es un conjunto de archivos de código fuente en JavaScript utilizando Node.js y Express para construir una API CRUD (Crear, Leer, Actualizar, Eliminar) para cartas de un juego. También incluye código en JavaScript para manipular el DOM y crear una interfaz de usuario que interactúa con la API para mostrar, buscar, agregar, actualizar y eliminar cartas. Además, se utiliza MongoDB con Mongoose para gestionar la base de datos.',
-      image: './assets/images/back-to-the-future.png',
-      githubLink: 'https://github.com/CamilaFallas/plants',
-      techIcons: [<FaJs key="javascript" size={24} />],
-    },
   ];
 
   React.useEffect(() => {
