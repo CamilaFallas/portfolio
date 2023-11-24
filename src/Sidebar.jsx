@@ -17,7 +17,7 @@ const Sidebar = () => {
         </a>
         </div>
         <a href="./camila-fallas__cv.pdf" download>
-          <button className="btn btn-secondary " >Download Resume</button>
+          <button className="btn btn-slider " >Download Resume</button>
         </a>
       </div>
     </div>
