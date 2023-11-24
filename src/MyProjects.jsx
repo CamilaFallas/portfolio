@@ -1,9 +1,14 @@
-// eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { motion } from 'framer-motion';
-import { FaWordpress, FaFigma } from 'react-icons/fa'; // Import the FontAwesome icons you need
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { FaWordpress, FaFigma } from 'react-icons/fa';
 
 const MyProjects = () => {
+  const controls = useAnimation();
+  const [ref, inView, entry] = useInView({
+    triggerOnce: false,
+  });
+
   const projects = [
     {
       id: 1,
@@ -24,6 +29,14 @@ const MyProjects = () => {
     },
   ];
 
+  React.useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    } else {
+      controls.start('hidden');
+    }
+  }, [controls, inView]);
+
   return (
     <div className="container-fluid my-5">
       <h2 className="text-center text-white mb-4">Projects</h2>
@@ -31,6 +44,14 @@ const MyProjects = () => {
         {projects.map((project) => (
           <div key={project.id} className="col-md-8 mb-4">
             <motion.div
+              ref={ref}
+              initial="hidden"
+              animate={controls}
+              variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 100 },
+              }}
+              transition={{ duration: 0.5 }}
               className="card"
               style={{ backgroundColor: '#2c2c2c', color: 'white' }}
             >
@@ -56,26 +77,13 @@ const MyProjects = () => {
                     </div>
                   </div>
                   <div className="card-footer d-flex justify-content-center">
-                    {/* {project.githubLink && (
-                      <motion.a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn btn-secondary mx-2"
-                        whileHover={{
-                        boxShadow: '0px 0px 20px rgba(255, 255, 255, 0.2)'
-              }}
-                      >
-                        Watch code
-                      </motion.a>
-                    )} */}
                     <motion.a
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-secondary mx-2"
                       whileHover={{
-                        boxShadow: '0px 0px 20px rgba(255, 255, 255, 0.2)'
+                        boxShadow: '0px 0px 20px rgba(255, 255, 255, 0.2)',
                       }}
                     >
                       See project
