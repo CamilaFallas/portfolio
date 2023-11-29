@@ -9,12 +9,16 @@ const Sidebar = () => {
       <div className="sidebar-content text-center">
         <img src="/assets/images/profilePhoto.jpg" alt="Camila Fallas" className="img-custome" />
         <div>
-        <a href='https://www.linkedin.com/in/camila-fallas-naranjo-16a8901a8/' target="_blank" rel="noopener noreferrer">
-        <FaLinkedin className="custom-icon" />
-        </a>
-        <a href='https://github.com/CamilaFallas' target="_blank" rel="noopener noreferrer">
-        <FaGithub className="custom-icon" />
-        </a>
+          <a 
+          href='https://www.linkedin.com/in/camila-fallas-naranjo-16a8901a8/' target="_blank" rel="noopener noreferrer">
+          <FaLinkedin className="custom-icon" />
+          </a>
+          <a 
+          href='https://github.com/CamilaFallas' target="_blank" rel="noopener noreferrer">
+          <FaGithub className="custom-icon" />
+          </a>
+          <p>camilafallasnaranjo@gmail.com</p>
+          <p>+506 8692-9187</p>
         </div>
         <a href="./camila-fallas__cv.pdf" download>
           <button className="btn btn-slider " >Download Resume</button>
