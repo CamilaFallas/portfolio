@@ -5,8 +5,9 @@ import { FaWordpress, FaFigma, FaJs } from 'react-icons/fa';
 
 const MyProjects = () => {
   const controls = useAnimation();
-  const [ref, inView, entry] = useInView({
+  const [ref, inView] = useInView({
     triggerOnce: false,
+    rootMargin: '50% 0px',
   });
 
   const projects = [
