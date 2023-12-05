@@ -20,7 +20,7 @@ const Sidebar = () => {
           <p>camilafallasnaranjo@gmail.com</p>
           <p>+506 8692-9187</p>
         </div>
-        <a href="./camila-fallas__cv.pdf" download>
+        <a href="../public/assets/camila-fallas__cv.pdf" download>
           <button className="btn btn-slider " >Download Resume</button>
         </a>
       </div>
