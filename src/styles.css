@@ -28,7 +28,7 @@
 }
 
 section {
-  margin: 7rem 3rem 9rem 3rem;
+  margin: 7rem 5rem 9rem 5rem;
 }
 
 .main-content {
@@ -36,6 +36,10 @@ section {
   overflow-y: auto;
   background-color: #18181b;
   color: #edeef0;
+}
+
+h2 {
+  margin: 1rem 0 1.5rem 0;
 }
 
 .btn {
@@ -71,11 +75,18 @@ color: #a170e0;
 .star-list {
   list-style: none;
   padding: 0; 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .star-list li::before {
   content: "🌟"; 
   margin-right: 0.5em; 
+}
+
+.star-list li {
+  text-align: left;
 }
 
 /* Mobile */
