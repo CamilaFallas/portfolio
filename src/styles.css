@@ -61,6 +61,10 @@ h2 {
   color: white;
 }
 
+.link_custom-color {
+  color: #8d50dc;
+}
+
 .custom-icon {
   margin: 1rem;
   width: 28px;
