@@ -16,7 +16,7 @@ const MyProjects = () => {
       title: 'Tienda Fundacion La Libertad',
       description: 'E-commerce built in WooCommerce for La Libertad Foundation.',
       image: './assets/images/la-libertad.png',
-      link: 'https://dev-test-la-libertad.pantheonsite.io/',
+      link: 'https://tienda.lalibertadcr.org/',
       techIcons: [<FaWordpress key="wordpress" size={24} />],
     },
     {
